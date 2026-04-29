@@ -1,0 +1,75 @@
+<!doctype html>
+<!-- Basic DOM Functionality Demo -->
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>DOM Traversal & Manipulation Demo</title>
+
+    <!-- External JS -->
+    <script src="dom.js" defer></script>
+  </head>
+
+  <body>
+    <!-- ===== CONTENT AREA ===== -->
+
+    <h1 id="bigheading">[bigheading] DHTML Object Model</h1>
+
+    <h3 id="smallheading">[smallheading] Element Functionality</h3>
+
+    <p id="para1">[para1] The DOM allows dynamic access to elements.</p>
+
+    <p id="para2">
+      [para2] Learn more at:
+      <a id="link" href="#">JavaScript Resource Center</a>
+    </p>
+
+    <p id="para3">[para3] List below:</p>
+
+    <ul id="list">
+      <li id="item1">[item1] getElementById & parentNode</li>
+      <li id="item2">[item2] insertBefore & appendChild</li>
+      <li id="item3">[item3] replaceChild & removeChild</li>
+    </ul>
+
+    <!-- ===== CONTROL PANEL ===== -->
+
+    <div id="nav">
+      <form onsubmit="return false;">
+        <!-- Get By ID -->
+        <p>
+          <input type="text" id="gbi" value="bigheading" />
+          <input type="button" value="Get By ID" id="byIdButton" />
+        </p>
+
+        <!-- Insert Before -->
+        <p>
+          <input type="text" id="ins" placeholder="Text for new node" />
+          <input type="button" value="Insert Before" id="insertButton" />
+        </p>
+
+        <!-- Append -->
+        <p>
+          <input type="text" id="append" placeholder="Text for new node" />
+          <input type="button" value="Append Child" id="appendButton" />
+        </p>
+
+        <!-- Replace -->
+        <p>
+          <input type="text" id="replace" placeholder="Text for replacement" />
+          <input type="button" value="Replace Current" id="replaceButton" />
+        </p>
+
+        <!-- Remove -->
+        <p>
+          <input type="button" value="Remove Current" id="removeButton" />
+        </p>
+
+        <!-- Parent -->
+        <p>
+          <input type="button" value="Get Parent" id="parentButton" />
+        </p>
+      </form>
+    </div>
+  </body>
+</html>
